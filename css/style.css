@@ -1,0 +1,714 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 400;
+    font-family:  serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    transition: filter 0.5s;
+}
+
+.container.gray {
+    filter: grayscale(0.8);
+}
+
+section {
+    padding: 8rem 0;
+    font-size: 3rem;
+} 
+
+.section-heading {
+    font-size: 8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2rem 2rem 4rem #aaa;
+}
+
+.btn {
+    max-width: 30rem;
+    margin: 3rem;
+    text-align: center;
+    padding: 1rem;
+    border: solid 1px black;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.1s;
+    display: block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: brown;
+} 
+
+.btn-line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+}
+
+/* End of Common Styles */
+
+/* Top */
+#top {
+    width: 100%;
+    height: 100vh;
+    background:url("../img/chuttersnap-DOBIZ_sqgXM-unsplash.jpg") no-repeat  center;
+    background-size: cover;
+    box-shadow: 30rem 15rem 30rem #000 inset;
+    padding-top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: opacity 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    text-shadow: 0.2rem 0.2rem .3rem black;
+}
+
+.humburger-icon {
+    display: none;
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.humburger-icon .btn-line {
+    margin: 1rem 0;
+    transition: transform 0.5s;
+}
+
+
+.logo {
+    width: 40%;
+    text-align: right;
+    font-size: 10rem;
+    color: #fff;
+    line-height: 8rem;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+    text-shadow: 2rem 2rem 5rem black;
+    padding: 3rem 5rem;
+    border: solid 0.1rem brown;
+    border-left: none;
+    box-shadow: 0.1rem 0.1rem 1rem #000;
+    font-family: 'Libre Baskerville', serif;
+    
+    position: relative;
+    top: calc(50% - 25vh);
+    left: 0;
+}
+
+.logo span {
+    font-size: 9rem;
+    color:brown;
+
+}
+
+/* DESCTOPTION */
+#concept {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.concept-title {
+    width: 100%;
+    height: 8rem; 
+    font-size: 8rem;
+    margin-bottom: 3rem;
+    opacity: 1;
+    overflow: hidden;
+    transition: width 1.5s, opacity 4s;
+}
+
+.concept-description {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: justify;
+    opacity: 1;
+    visibility: visible;
+
+    overflow: hidden;
+    transition: all 2s 2s;
+}
+
+.hide.concept-title {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.hide.concept-description {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* MENU */
+#menu {
+    width: 100vw;
+    background: url("../img/bottles-3623317_1920.jpg") center no-repeat fixed;
+    background-size: cover;
+    filter: brightness(0.9);
+    z-index: -10;
+}
+
+#menu .section-heading {
+    text-shadow: 2rem 2rem 4rem #242424; 
+}
+
+.menu-container {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 3rem auto;
+    padding: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+}
+
+.menu-list {
+    width: 80%;
+    display: flex;
+    line-height: 1.8;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-price {
+    margin-left: 5rem;
+}
+
+.menu-container .btn {
+    font-size: 2.5rem;
+    min-width: 25rem;
+}
+
+.menu-container .btn:hover {
+    background-color: rgba(244, 244, 244, 0.8);
+    transition: background-color 0.3s;
+}
+
+/* gallery */
+.img-container {
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 25vw;
+    height: 25vw;
+}
+
+.row {
+    display: flex;
+}
+
+.row-1 {
+    border-bottom: solid 0.1rem #731c1c; 
+    border-top: solid 5rem #731c1c;
+}
+
+.row-2 {
+    border-bottom: solid 5rem #731c1c;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+}
+
+/* access */
+#access {
+    padding-top: 3rem;
+}
+
+.access-container {
+    width: 70%;
+    margin: 5rem auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.access-container iframe {
+    width: 600px;
+    height: 400px;
+    border-radius: 3px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+.infos .btn {
+    width: 20rem;
+    margin: 1rem 0;
+    background-color: black;
+    color: #fff;
+    border: solid 1px #fff;
+    transition: all 0.3s;
+}
+
+.infos .btn:hover {
+    background-color: #eee;
+    color: brown;
+
+    border: solid 1px #fff;
+}
+
+.opening-hours h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.opening-hours div {
+    margin-top: 2rem;
+}
+
+.opening-hours span {
+    font-size: 1.8rem;
+}
+
+#reserve {
+    display: flex;
+    justify-content: center;
+}
+
+.paper-bg {
+    width: 50%;
+    background: url("../img/watercolor-paper-texture-2.jpg");
+    padding: 5rem 10rem;
+    color: #242424;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 3rem #242424;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.form-title {
+    font-size: 5rem;
+    color: goldenrod;
+    font-family: 'Mrs Saint Delafield', cursive;  
+    text-align: center;
+    font-style: normal;
+}
+
+#reserve small, #confirmationModal small {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 1rem 0 1.5rem;
+    color: #5c5c5c;
+}
+
+#reserve p, #reserve label, #confirmationModal .input-label {
+    font-size: 2rem;
+}
+
+#reserve input, #reserve textarea {
+    border: none;
+    background-color: rgba(244, 244, 244, 0.6);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-label {
+    width: 15%;
+}
+
+#reserve input {
+    width: 80%;
+    height: 3rem;
+    border-bottom: solid 1px #242424;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 2rem;
+}
+
+#reserve textarea {
+    width: 100%;
+    height: 10rem;
+    border: solid 1px #242424;
+    border-radius: 3px;
+}
+
+.request-time {
+    display: flex;
+    justify-content: space-around;
+}
+
+#requestedDate {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#requestedDate, #requestedTime {
+    width: 45% !important;
+    display: inline-block;
+    height: 5rem !important;
+}
+
+#requestedTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(244, 244, 244, 0.6);
+    border-bottom: solid 1px #000;
+    border-radius: 3px 3px 0 0;
+    padding: 1rem 2rem;
+}
+
+#requestedTime select, #seats {
+    height: 5rem;
+    width: 40%;
+    background-color: rgba(244, 244, 244, 0.6);
+    border: none;
+    font-size: 2rem;
+    margin-bottom: 1px;
+    display: block;
+}
+
+#seats {
+    text-align-last: center;
+}
+
+#requestedTime option, #seats option {
+    text-align: center;
+}
+
+#requestedTime p {
+    font-style: normal;
+}
+
+input:required, input:invalid {
+    border-bottom: solid 1px brown;
+}
+
+input:valid {
+    border-bottom: solid 1px #000;
+}
+
+#reserve .btn {
+    margin: 3rem auto;
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    background-color: transparent;
+}
+
+#reserve .btn:hover {
+    background-color: rgba(244, 244, 244, 0.6);
+}
+
+#requestBtn {
+    z-index: 1;
+}
+
+/* Confirmation Modal */
+#confirmationModal {
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+    width: 60%;
+    max-height: 95%;
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 3px;
+    background: url('../img/watercolor-paper-texture-1.jpg') repeat;
+    color: #222;
+    box-shadow: 0.5rem 0.5rem 1rem #000, -0.2rem -0.2rem 0.5rem #aaa;
+    transition: opacity 0.5s, visibility .3s;
+    color: #1a1a1a;
+    overflow-y: auto;
+}
+
+#confirmationModal.show {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+
+#confirmationModal .form-title {
+    height: 5rem;
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-label {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.textarea-label {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+input:read-only, textarea:read-only {
+    color: #000;
+    border: none;
+}
+
+input#selectedSeats {
+    text-align: center !important;
+}
+
+.confirmation-details {
+    display: flex;
+}
+
+.confirmation-details.comment {
+    flex-direction: column;
+}
+
+.confirmation-details.date {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirmation-details.hide {
+    display: none;
+}
+
+.confirmation-details.date .typed-infos {
+    width: 20rem;
+    padding-left: 0;
+    text-align: center;
+}
+
+.typed-infos {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px #000;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px 3px 0 0;
+}
+
+#typedComment {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.btn-container {
+    display: flex;
+    width: 100%;
+}
+
+#confirmationModal .btn {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-style: normal;
+    width: 50%;
+    background-color: transparent;
+    border: solid 1px #000;
+}
+
+#confirmationModal .btn:hover, button:hover {
+    background-color: rgba(244, 244, 244, 0.6);
+}
+
+#confirmationModal input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    display: none;
+}
+
+.close-icon {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+
+}
+
+.close-icon .btn-line {
+    background-color: #000;
+}
+
+.close-icon .btn-line:first-child {
+    transform: translateY(1rem) rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.close-icon .btn-line:last-child {
+    transform: translateY(0.9rem) rotate(135deg);
+    transition: transform 0.5s;
+}
+
+/* Send message */
+#sentMessage {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+#sentMessage.show {
+    z-index: 50;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 25%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .5s, visibility .3s;
+    min-height: 30rem;
+}
+
+#sentMessage > div.thanksMessage {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
+#sentMessage > div.thanksMessage p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#sentMessage .attention {
+    text-decoration: underline;
+}
+
+#sentMessage .btn {
+    margin: 3rem auto;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+
+/* up-icon */
+.up-icon {
+    background-color: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-icon i {
+    font-size: 2rem;
+}
+
+
+/* footer */
+footer {
+    background-color: #fff;
+    color: black;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 7rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    letter-spacing: -3px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer-logo span {
+    font-size: 5rem;
+    color: brown;
+    margin: 0 0.5rem;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 3rem;
+    margin: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: brown;
+}
+
+footer small {
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;
+}

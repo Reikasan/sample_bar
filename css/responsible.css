@@ -1,0 +1,354 @@
+@media screen and ( max-width: 1200px ) {
+    .logo {
+        width: 50%;
+    }
+    .menu-container {
+        width: 80%;
+    }
+    #access {
+        padding-top: 0;
+    }
+    .access-container {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .access-container iframe {
+        width: 500px;
+        height: 350px;
+        border-radius: 3px;
+    }
+    .paper-bg {
+        width: 70%;
+    }
+} /* 1200px */
+
+@media screen and ( max-width: 1050px ) {
+    .section-heading {
+        font-size: 7rem;
+    }
+    .nav-link {
+        font-size: 3.5rem;
+    }
+    .logo {
+        font-size: 8rem;
+        line-height: 7rem;
+    }
+    .logo span {
+        font-size: 7rem;
+    }
+    .concept-title {
+        font-size: 6rem;
+        height: 6rem;
+    }
+    .access-container {
+        width: 100%;
+    }
+    .paper-bg {
+        margin-bottom: 5rem;
+    }
+    .footer-logo {
+        font-size: 6rem;
+        letter-spacing: -2px;
+        margin-bottom: 0;
+    }
+    .footer-logo span {
+        font-size: 4.5rem;
+    }
+} /* 1050px */
+
+@media screen and ( max-width: 950px ) {
+    .navbar {
+        padding: 3rem;
+    }
+    .menu-list {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    .paper-bg {
+        width: 85%;
+    }
+    #sentMessage > div.thanksMessage {
+        width: 80%;
+    }
+    footer small {
+        margin: 2rem 0 1rem;
+    }
+} /* 950px */
+
+@media screen and ( max-width: 800px ) {
+    #top {
+        box-shadow: 10rem 15rem 20rem #000 inset;    
+    }
+    .nav-link {
+        font-size: 3rem;
+    }
+    .logo {
+        font-size: 7rem;
+        line-height: 6rem;
+        width: 60%;
+    }
+    .logo span {
+        font-size: 6rem;
+    }
+    #concept {
+        padding: 5rem;
+    }
+    .concept-title {
+        font-size: 5rem;
+        height: 5rem;
+        line-height: 0.8;
+        margin-bottom: 1rem;
+    }
+    .concept-description {
+        font-size: 2.2rem;
+    }
+    .up-icon {
+        right: 2rem;
+    }
+    .menu-list {
+        font-size: 2.5rem;
+    }
+    .menu-price {
+        margin-left: 3rem;
+    }
+    .access-container iframe {
+        width: 350px;
+    }  
+    .paper-bg, #confirmationModal {
+        padding: 3rem;
+    }
+    .footer-logo {
+        font-size: 5rem;
+        letter-spacing: -2px;
+        margin-bottom: 0;
+    }
+    .footer-logo span {
+        font-size: 4rem;
+    }
+} /* 800px */
+
+@media screen and ( max-width: 650px ) {
+    #top {
+        background:url("../img/top_mobile.jpg") no-repeat  center;
+        background-size: cover;
+    }
+    section {
+        padding: 4rem 0  1rem;
+    }
+    #concept {
+        padding: 5rem;
+    }
+    .section-heading {
+        font-size: 5rem;
+        padding: 1rem 0 1rem;
+    }
+    .navbar {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        display: none;
+        transition: opacity 6s;
+    }
+    .navbar.show {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(36, 36, 36, 0.7);
+        z-index: 50;
+        transition: opacity 2s;
+    }
+    .nav-link {
+        margin: 1rem auto;
+    }
+    .logo {
+        position: absolute;
+        top: 40%;
+    }
+    .humburger-icon {
+        display: block;
+        z-index: 60;
+    }
+    .humburger-icon .btn-line:nth-child(2) {
+        visibility: visible;   
+    }
+    .humburger-icon.close .btn-line:first-child {
+        transform: translateY(0.8rem) rotate(405deg);
+    }
+    .humburger-icon.close .btn-line:nth-child(2) {
+        visibility: hidden;
+    }
+    .humburger-icon.close .btn-line:last-child {
+        transform: translateY(-1.4rem) rotate(-405deg);
+    }
+    #menu {
+        background: url("../img/bottles-3623317_mobile.jpg") center top no-repeat;
+        background-size: cover;
+    }
+    .menu-right {
+        display: none;
+    }
+    .concept-title {
+        font-size: 3.8rem;
+    }
+    .row img {
+        width: 24vw;
+        height: 50vw;
+        border: solid 1px #731c1c;
+    }
+    .row .mobile-s {
+        object-fit: scale-down;
+    }
+    .row .mobile-l {
+        width: 49vw;
+    }
+    .row .mobile-hide {
+        display: none;
+    }    
+    .row {
+        justify-content: space-around;
+    }
+    .row-1 {
+        border-bottom: none;
+    }
+    #access {
+        padding: 0;
+    }
+    .access-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .access-container iframe {
+        width: 80vw;
+        height: 60vw;
+        margin-bottom: 3rem;
+    }
+    #confirmationModal {
+        max-height: 95vh;
+        width: 80%;
+        padding: 2rem 3rem;
+    }
+    #confirmationModal .form-title {
+        font-size: 4rem;
+    }
+    #confirmationModal .date-label, #confirmationModal .input-label, #confirmationModal .textarea-label {
+        font-size: 1.8rem;
+    }
+    .typed-infos {
+        font-size: 2rem;
+        height: 2.5rem;
+    }
+    .request-time {
+        flex-direction: column;
+    }
+    #requestedTime, #requestedDate {
+        width: 100% !important;
+        margin: 0 auto 2rem;
+    }
+    #confirmationModal .btn {
+        margin: 1rem auto;
+        width: 40%;
+    }
+    #sentMessage > div > .form-title {
+        font-size: 4rem;
+    } 
+} /* 650px */
+
+@media screen and ( max-width: 500px ) {    
+    .logo {
+        padding: 3rem 2rem;
+        font-size: 5rem;
+        line-height: 5rem;
+    }    
+    .logo span {
+        font-size: 4.5rem;
+    }
+    .hide.concept-title {
+        height: 0;
+    }
+    .concept-title {
+        height: 7rem;
+    }      
+    #access .section-heading {
+        position: relative;
+        height: 8rem;
+    }
+    #access .section-heading .first {
+        position: absolute;
+        right: 48%;
+    }
+    #access .section-heading .mid{
+        position: absolute;
+        top: 2rem;
+        left: 52%;
+        font-size: 4rem;
+        text-shadow: -0.1rem -0.1rem 0.1rem #333;
+    }
+    #access .section-heading .last {
+        position: absolute;
+        top: 3rem;
+        left: 60%;   
+    }
+    .form-title {
+        font-size: 4rem;
+    }
+    #reserve p, #reserve label, #confirmationModal .input-label, #confirmationModal .date-label {
+        font-size: 1.5rem;   
+    }
+    #reserve small, #confirmationModal small {
+        font-size: 1.5rem;    
+        margin-bottom: 2rem;
+    }
+    #reserve input {
+        padding: 0 2rem;
+        font-size: 1.8rem;
+    }
+    input#requestedDate  {
+        padding-top: 1rem;
+    }
+    #requestedTime {
+        padding: 0;
+    }
+    #requestedTime select {
+        width: auto;
+    }
+    #reserve .btn, #confirmationModal .btn {
+        font-size: 2rem;
+    }
+    .close-icon {
+        top: 1rem;
+        right: 1rem;
+    }
+    #sentMessage .thanksMessage {
+        width: 100%;
+    }
+    #sentMessage > div > .form-title {
+        line-height: 1;
+    }
+    #sentMessage.show {
+        top: 15%;
+        min-height: 35rem;
+    }
+    footer small {
+        font-size: 1.5rem;
+    }
+} /* 500px */
+
+@media screen and ( max-width: 450px ) {
+    #sentMessage.show {
+        min-height: 40rem;
+    }
+} 
+
+@media screen and ( max-width: 400px ) { 
+    #access .section-heading .first {
+        right: 45%;
+    }
+    #sentMessage > div.thanksMessage p {
+        font-size: 1.8rem;
+    }
+} /* 400px */
