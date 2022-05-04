@@ -1,6 +1,6 @@
 ![sample-bar-screen](https://user-images.githubusercontent.com/68085523/166680784-3a6c4a39-a59e-427d-ae30-2d7c9cb39b0a.jpg)
 
-This is a source code for bar site.
+This is a source code for [bar site sample](https://sample-bar.reikaakuzawa.com).
 
 # Feature
 ### 1. Reservation Function
